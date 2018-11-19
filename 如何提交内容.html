@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="txt">
+        <button id="btn">确定</button>
+        <ul id="ul"></ul>
+    </div>
+    <script>
+
+        // 点击确定提交框内输入的内容，然后清空框内的输入的内容
+        // btn.onclick = function (){
+        //     let txt1 = txt.value;
+        //     ul.innerHTML += `
+        //         <li>${txt1}</li>`
+        //     txt.value = ''
+        // }
+
+
+        // 设置点击回车键提交。
+        // txt.onkeyup = function (ev){
+        //     switch(ev.keyCode){       // switch的弊端，只有一个可判断的值 
+        //         case 13 :
+        //             let txt2 = txt.value;
+        //             console.log(txt2)
+        //             ul.innerHTML += `<li> ${txt2} </li> `
+        //             txt.value = ''
+        //     } 
+        // }
+
+        // 设置使用键盘组合键提交内容
+        // txt.onkeyup = function (ev){
+        //     if(ev.ctrlKey && ev.keyCode === 13){  // &&=>逻辑与。两边都成立才运行下面代码。
+        //         let txt3 = txt.value;             // ev.ctrlKey的值默认false，只有按下Ctrl键没松开的情况下
+        //         ul.innerHTML = `<li>${txt3}</li>` // 再去按其他键 的时候，其值为true
+        //         txt.value = ''
+        //     }
+        // }
+        
+    </script>
+</body>
+
+</html>
